@@ -32,7 +32,7 @@ class Ponto2D:
      
     # Retorna a representação em string do Ponto2D
     def __str__( self ):
-        return "(" + str(self.__x) + ", " + str(self.__y) + ")"
+        return "(" + str(self.x) + ", " + str(self.y) + ")"
 
 # Fim da definicao da classe Pondo2D
     
@@ -83,8 +83,8 @@ class Retangulo:
 
     # Calcula a área desse retângulo
     def calcularArea( self ):
-        return ( (self.__dir_inf.x - self.__esq_sup.x) *
-                 (self.__esq_sup.y - self.__dir_inf.y) )
+        return ( (self.dir_inf.x - self.esq_sup.x) *
+                 (self.esq_sup.y - self.dir_inf.y) )
 
 
     # Determina se há interseção entre esse retângulo e o retângulo
